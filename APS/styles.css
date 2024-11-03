@@ -1,0 +1,143 @@
+/* Estilo básico da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container principal */
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Abas de navegação */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1890ff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tabs button:hover {
+  background-color: #1070d0;
+}
+
+/* Grid de duas colunas para a aba de administração */
+.admin-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Estilo dos formulários de administração */
+.product-admin, .promotion-admin {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+/* Grid de três colunas para a aba de compras */
+.shopping-panel {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+}
+
+/* Estilos para a lista de promoções */
+.promotion-list {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+/* Listagem de produtos */
+.product-list {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+/* Carrinho de compras */
+.cart {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+/* Produto individual */
+.product {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.product-info img,
+.cart-item img {
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+/* Botão de adicionar ao carrinho */
+.add-to-cart {
+  cursor: pointer;
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.add-to-cart:hover {
+  background-color: #1070d0;
+}
+
+/* Estilos do carrinho */
+.cart-item {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cart-savings {
+  font-style: italic;
+  color: #4caf50;
+}
